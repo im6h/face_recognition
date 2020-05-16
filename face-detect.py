@@ -16,8 +16,10 @@ while (True):
         w = face.right() - x
         h = face.bottom() - y
         cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 1)
+        # cv2.imwrite('src/images/vu/4.jpg', frame)
     # Display the resulting frame
     cv2.imshow('frame', frame)
+
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
